@@ -1,0 +1,29 @@
+ .header {
+     border-bottom: 1px solid #ececec;
+     background-color: #fff;
+
+    &__logo {
+            align-self: center;
+           margin-right: 93px;
+            color: $logo-secondary-dark-color;
+            margin-bottom: 16px;
+            margin-top: 16px;
+            color: $logo-secondary-dark-color;
+            }
+        }
+
+// Tablet 768-1200//
+    @media screen and (min-width: $tablet) {
+        .header__logo {
+        margin-right: 83px;
+        }
+    }
+
+
+ // Desktop 1200+//
+ @media screen and (min-width: $desktop) {
+     .header__logo {
+         margin-right: 93px;
+     }
+    }
+

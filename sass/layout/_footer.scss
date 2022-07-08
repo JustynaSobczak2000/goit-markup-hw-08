@@ -1,0 +1,123 @@
+// Mobile 480-768//
+.footer {
+    background-color: $footer-bg-color;
+    padding: 60px 0;
+
+    &__address {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__text {
+        font-weight: 400;
+        font-style: normal;
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+        list-style-type: none;
+        text-align: center;
+        color: $footer-text-color;
+
+        &--margin-bottom:not(:last-child) {
+            margin-bottom: 8px;
+        }
+    }
+
+    &__link {
+        color: $footer-address-link-color;
+        transition: color $transition;
+
+        &:hover,
+        &:focus {
+            color: $footer-address-link-hover-color;
+        }
+    }
+
+    &__join-us {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+
+        &--padding-top {
+            padding-top: 60px;
+        }
+    }
+
+    &__social-list {
+        display: flex;
+        align-items: center;
+        list-style-type: none;
+    }
+}
+
+// Tablet 768-1200//
+@media screen and (min-width: $tablet) {
+    .footer {
+        &__address {
+            flex-basis: 50%;
+        }
+
+        &__join-us {
+            flex-basis: 50%;
+
+            &--padding-top {
+                padding-top: 5px;
+            }
+        }
+    }
+}
+
+// Desktop 1200+//
+@media screen and (min-width: $desktop) {
+    .footer {
+
+        &__address {
+            flex-basis: auto;
+            align-items: flex-start;
+
+            &--margin-right {
+                margin-right: 70px;
+            }
+        }
+
+        &__text {
+            line-height: 2;
+            text-align: left;
+
+            &--margin-bottom:not(:last-child) {
+                margin-bottom: 9px;
+            }
+        }
+
+        &__join-us {
+            flex-basis: auto;
+            align-items: flex-start;
+
+            &--padding-top {
+                padding-top: 12px;
+            }
+
+            &--margin-right {
+                margin-right: 78px;
+            }
+        }
+    }
+}
+
+
+.footer__title {
+    font-style: normal;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    color: $h3-footer-color;
+
+    &--margin-bottom {
+        margin-bottom: 20px;
+    }
+}
+

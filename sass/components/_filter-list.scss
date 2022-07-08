@@ -1,0 +1,35 @@
+// Mobile 480-768//
+.filter-list {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    list-style-type: none;
+    margin-left: -8px;
+    margin-bottom: -15px;
+
+    &--padding-bottom {
+        padding-bottom: 40px;
+    }
+
+    &__item {
+        margin-left: 8px;
+        margin-bottom: 15px;
+    }
+}
+
+
+// Desktop 1200+//
+@media screen and (min-width: $tablet) {
+    .filter-list {
+        justify-content: center;
+        flex-wrap: wrap;
+
+        &--padding-bottom {
+            padding-bottom: 50px;
+        }
+
+        &__item:not(:first-child) {
+            margin-left: 8px;
+        }
+    }
+}

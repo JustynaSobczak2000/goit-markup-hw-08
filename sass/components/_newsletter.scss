@@ -1,0 +1,89 @@
+// Mobile 480-768//
+.newsletter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &--padding-top {
+        padding-top: 60px;
+    }
+
+    &__signup-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-width: 100%;
+    }
+
+    &__input {
+        width: 60%;
+        background-color: $newsletter-input-bg-color;
+        border: $newsletter-border;
+        border-radius: 4px;
+        padding: 15px 16px;
+        font-size: 16px;
+        line-height: 1.25;
+        letter-spacing: 0.03em;
+        color: $newsletter-color;
+        transition: color $transition, border-color $transition;
+
+        &--margin-bottom {
+            margin-bottom: 20px;
+        }
+
+        &:hover,
+        &:focus,
+        &:active {
+            outline: none;
+            color: $newsletter-color-hover;
+            border-color: $newsletter-border-color-hover;
+        }
+
+        &::placeholder {
+            font-size: 16px;
+        }
+    }
+}
+
+// Tablet 768-1200//
+@media screen and (min-width: $tablet) {
+    .newsletter {
+        &__input {
+            width: 450px;
+        }
+    }
+}
+
+// Desktop 1200+//
+@media screen and (min-width: $desktop) {
+    .newsletter {
+        align-items: flex-start;
+
+        &--padding-top {
+            padding-top: 12px;
+        }
+
+        &--flex-grow {
+            flex-grow: 1;
+        }
+
+        &__signup-form {
+            flex-direction: row;
+        }
+
+        &__input {
+            width: 100%;
+            display: flex;
+            
+
+
+            &--margin-right {
+                margin-right: 12px;
+            }
+
+            &--margin-bottom {
+                margin-bottom: 0px;
+            }
+        }
+    }
+}

@@ -1,0 +1,78 @@
+// Mobile 480-768//
+.contact {
+    display: none;
+}
+
+
+// Tablet 768-1200//
+@media screen and (min-width: $tablet) {
+    .contact {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        list-style: none;
+
+        &--flex {
+            justify-content: flex-end;
+            flex-grow: 1;
+        }
+
+        &__item--margin-bottom {
+            margin-bottom: 10px;
+        }
+
+        &__link {
+            display: flex;
+            align-items: center;
+            font-size: 12px;
+            font-weight: 500;
+            line-height: 1.17;
+            letter-spacing: 0.02em;
+            font-style: normal;
+            text-transform: lowercase;
+            color: $contact-link-color;
+            transition: color $transition;
+
+            &:hover,
+            &:active,
+            &:focus {
+                color: $brand-color;
+            }
+        }
+
+        &__icon-envelope {
+            fill: currentColor;
+            margin-right: 10px;
+            width: 16px;
+            height: 12px;
+        }
+
+        &__icon-smartphone {
+            fill: currentColor;
+            margin-right: 10px;
+            width: 10px;
+            height: 16px;
+        }
+    }
+}
+
+// Desktop 1200+//
+@media screen and (min-width: $desktop) {
+    .contact {
+        flex-direction: row;
+        align-items: center;
+
+        &__item--margin-bottom {
+            margin-bottom: 0px;
+        }
+
+        &__item:not(:first-child) {
+            margin-left: 50px;
+        }
+
+        &__link {
+            font-size: 14px;
+            line-height: 1.14;
+        }
+    }
+}
