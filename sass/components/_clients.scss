@@ -32,43 +32,15 @@
         align-self: center;
         fill: $clients-icon-color;
         transition: fill $transition;
-
-        &--company01 {
-            width: 41px;
-            height: 48px;
-        }
-
-        &--company02 {
-            width: 40px;
-            height: 53px;
-        }
-
-        &--company03 {
-            width: 45px;
-            height: 42px;
-        }
-
-        &--company04 {
-            width: 85px;
-            height: 42px;
-        }
-
-        &--company05 {
-            width: 63px;
-            height: 47px;
-        }
-
-        &--company06 {
-            width: 94px;
-            height: 45px;
-        }
+        width: 106px;
+        height: 60px;}
 
         .clients__link:hover &,
         .clients__link:hover & {
             fill: $clients-color-hover;
         }
     }
-}
+
 
 // Tablet 768-1200//
 @media screen and (min-width: $tablet) {
