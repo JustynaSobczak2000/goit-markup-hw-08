@@ -429,8 +429,8 @@ main {
   color: #2196f3;
 }
 .mobile-menu__icon {
-  width: 19px;
-  height: 19px;
+  width: 25px;
+  height: 25px;
   fill: currentColor;
 }
 .mobile-menu__icon:active, .mobile-menu__icon :hover, .mobile-menu__icon :focus {
